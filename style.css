@@ -1,0 +1,30 @@
+/*
+   This is a CSS comment!
+   They are ignored by the browser.
+   I'll leave you notes in here using these!
+
+   TODO: Annotate a CSS demo...
+*/
+h1 {
+  color: red;
+  background: blue;
+  border: 1px solid yellow;
+  border-radius: 10px 20px 30px 40px;
+  padding: 10px 15px 10px;
+  padding-left: 30px;
+}
+
+.attack-button {
+  padding: 10px 18px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.trevor-attack {
+  background-color: green;
+}
+
+.adam-attack {
+  background-color: red;
+}
