@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+  This is an HTML comment! The browser won't render this.
+  I'll describe things in this HTML file using these.
+  The doctype above tells the browser that this is an HTML document.
+  Most browsers don't require this anymore, but it is good practice to have.
+-->
+<html>
+
+  <!-- The HEAD element contains assorted metadata about the document. -->
+  <head>
+    <title>Trevor's Website</title>
+    <meta name="description" content="This content will show up as the description of your site in search results.">
+    <meta name="author" content="Trevor William Foehl">
+
+    <!-- The HEAD element can also contain links to external resources, like these styles! -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+
+  <!-- The BODY element contains everything you actually see in the browser. -->
+  <body>
+
+    <!-- HTML consists of nested "elements" that may have zero to many "attributes" -->
+    <!-- Every element has a different purpose. These H1 and H2 elements below are headers. Headers are numbered H1 - H6. -->
+    <h1>Trevor's Awesome Website!</h1>
+    <h2>Itsn't it cool?</h2>
+
+    <!-- These buttons have class and id attributes set! Their values are referenced in our CSS and JS -->
+    <button class="attack-button trevor-attack" id="trevor">Attack! (Trevor)</button>
+    <button class="attack-button adam-attack" id="adam">Attack! (Adam)</button>
+
+    <!--
+      We include our JavaScript file down here, because the browser reads this file top to bottom, and
+      evaluates external dependencies as it encounters them. By placing the JS file down here, we let
+      the browser render all of the above HTML before running our script. This is required because our
+      script references the buttons above – and it can't interact with something that hasn't rendered yet!
+    -->
+    <script src="./script.js"></script>
+  </body>
+
+</html>
