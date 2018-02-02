@@ -228,7 +228,7 @@ notAFunction(); // Throws error: "notAFunction" is not a function.
 // Functions may take any number of arguments. You can pass values to the
 // function inside the `()` used to call it! Those values will be available
 // for use inside the function's "scope".
-function iTakeArguments(arg1, arg2, arg3){
+function iTakeArguments(arg1, arg2, arg3) {
   console.log(arg1, arg2, arg3);
 }
 
@@ -254,7 +254,7 @@ function one(){
   return 1;
 }
 function two() {
-  return 1;
+  return 2;
 }
 console.log(callThis(one)) // Logs: 1
 console.log(callThis(two)) // Logs: 2
@@ -264,6 +264,7 @@ console.log(callThis(two)) // Logs: 2
 // object, it is said to be a "method" of that object. For example, this
 // object has a "method" called `notify`:
 var obj = {
+  key: 'value',
   notify(){
     console.log('Notification!');
   }
